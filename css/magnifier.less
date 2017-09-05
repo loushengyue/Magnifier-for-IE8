@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding:0;
+}
+body{
+  background-color: #CCCCCC;
+  padding-top:1px;
+}
+.magnifier{
+  width: 500px;
+  height: 400px;
+  margin-left: 200px;
+  margin-top: 99px;
+  position: relative;
+  .small-pic{
+    width: 440px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .pointer {
+      border: 1px solid red;
+      background: url("../img/bac.png");
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left:0;
+      display: none;
+      cursor: crosshair;
+    }
+  }
+  .big-pic{
+    width: 440px;
+    height: 300px;
+    position: absolute;
+    left: 450px;
+    top:0;
+    overflow: hidden;
+    background-color: #00a4e4;
+    display: none;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: block;
+    }
+  }
+}
